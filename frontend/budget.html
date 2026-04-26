@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dashboard-page">
+  <div id="notification"></div>
+  <div class="budget-box">
+    <h1>Budget Tracker</h1>
+
+    <input type="number" id="income" placeholder="Enter Income" min="0.01" step="0.01" />
+    <div class="line"></div>
+    <h3>Add Expense</h3>
+
+    <input type="text" id="ename" placeholder="Expense Name" />
+    <input type="number" id="eamount" placeholder="Amount" min="0.01" step="0.01" />
+
+    <div class="quick-btns">
+      <button class="one" data-quick="Food">Food</button>
+      <button class="o" data-quick="Travel">Travel</button>
+      <button class="two" data-quick="Tea/Snacks">Tea/Snacks</button>
+      <button class="three" data-quick="Petrol">Petrol</button>
+      <button class="four" data-quick="Groceries">Groceries</button>
+      <button class="five" data-quick="Shopping">Shopping</button>
+      <button class="six" data-quick="Medical">Medical</button>
+      <button class="seven" data-quick="Mobile Recharge">Mobile Recharge</button>
+      <button class="p" data-quick="Electricity">Electricity</button>
+      <button class="q" data-quick="Internet">Internet</button>
+      <button class="r" data-quick="Rent">Rent</button>
+      <button class="s" data-quick="Personal Care">Personal Care</button>
+      <button class="t" data-quick="College Fees">College Fees</button>
+      <button class="u" data-quick="EMI">EMI</button>
+      <button class="v" data-quick="Fees">Fees</button>
+      <button class="w" data-quick="Others">Others</button>
+    </div>
+
+    <div class="line"></div>
+    <button id="addExpenseBtn">Add Expense</button>
+    <button id="speakExpenseBtn">Speak Expense</button>
+    <button id="speakAmountBtn">Add Amount</button>
+    <button id="setIncomeBtn">Set Income</button>
+    <div class="line"></div>
+    <button id="calculateBtn">Calculate Budget</button>
+    <p id="transactionMessage" class="message"></p>
+
+    <ul id="list"></ul>
+    <div class="line"></div>
+    <h3 id="result"></h3>
+    <h3>Expenses Chart</h3>
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <div class="line"></div>
+    <div class="bottom-auth-actions">
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+      <p class="dashboard-links">
+        Go to <a href="index.html">Home</a> / <a href="login.html">Login</a> / <a href="signup.html">Signup</a>
+      </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

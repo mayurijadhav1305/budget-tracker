@@ -1,0 +1,458 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: rgb(30, 2, 75);
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.home-page {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 48px;
+  background: rgb(30, 2, 75);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.home-header nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 270px;
+  padding: 20px;
+  background: #fff;
+  margin-top: 80px;
+}
+
+.text {
+  max-width: 760px;
+  color: #111827;
+}
+
+.text h1 {
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.X {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 8px 0 16px;
+}
+
+.wave {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background: rgb(57, 27, 112);
+  transform: scale(1, 1);
+}
+
+.wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(46, 8, 116);
+  left: -25%;
+  top: -240px;
+  clip-path: ellipse(100% 15% at -15% 100%);
+}
+
+.text-block {
+  max-height: 250px;
+  text-align: left;
+  float: left;
+  position: relative;
+  margin-top: -500px;
+  color: #fff;
+}
+
+.works {
+  color: #fff;
+}
+
+.image {
+  position: relative;
+  z-index: 5;
+  float: right;
+  margin-top: -400px;
+}
+
+.start {
+  margin-top: 16px;
+  padding: 12px 22px;
+  border: none;
+  background: rgb(30, 2, 75);
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.it {
+  text-align: center;
+  margin: 70px auto 30px;
+  color: #111827;
+}
+
+.passage {
+  max-width: 760px;
+  margin: 10px auto;
+}
+
+.features {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #cfd9ff, #e2ebff);
+  margin-top: 180px;
+}
+
+.features h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgb(224, 221, 232);
+  width: 220px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(150, 103, 181, 0.1);
+  transition: 0.3s;
+  color: #111827;
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.loginpage {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/010/146/435/small/glass-jar-and-coins-on-the-table-finance-and-growth-ideas-in-investment-business-future-success-strategy-is-based-on-good-income-planning-and-management-saving-money-creates-investment-opportunities-free-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.up {
+  background-image: url("https://www.shutterstock.com/image-photo/business-development-success-growth-global-600nw-2477483117.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box,
+.signup-box {
+  width: 320px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  color: #fff;
+}
+
+.login-box form,
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-box input,
+.signup-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #7b7474;
+  border-radius: 6px;
+}
+
+.login-box button,
+.signup-title {
+  width: 100%;
+  padding: 10px;
+  background: rgb(8, 27, 110);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.auth-link {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.auth-link a {
+  color: #fff;
+}
+
+.login,
+.signup {
+  border-radius: 20px;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.signup {
+  background: #3bb77e;
+  color: #fff;
+}
+
+.feature-btn {
+  padding: 15px 40px;
+  font-size: 16px;
+  color: #4caf50;
+  background: #f5f7f6;
+  border: 2px solid #dfe6e3;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin: 0 auto 30px;
+  display: block;
+  text-align: center;
+}
+
+.feature-btn:hover {
+  background: #e8f5e9;
+  transform: scale(1.05);
+}
+
+.dashboard-page {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-image: url("https://img.freepik.com/premium-photo/dynamic-stock-market-chart-with-glowing-blue-red-elements-dark-background-concept-financial-analysis-3d-rendering_670147-105861.jpg");
+  background-position: center;
+  padding: 0;
+}
+
+.budget-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 22px 28px;
+  width: 600px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 30px 0;
+}
+
+.budget-box h1,
+.budget-box h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.budget-box h1 {
+  font-size: 42px;
+  margin: 6px 0 18px;
+}
+
+.budget-box input {
+  width: 42%;
+  padding: 10px;
+  margin: 6px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.budget-box button {
+  border: none;
+  padding: 10px;
+  width: 58%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #9b5de5, #f15bb5);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.quick-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.quick-btns button {
+  width: auto;
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #9b5de5, 0 0 30px #f15bb5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  min-height: 30px;
+}
+
+li {
+  margin: 5px 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  margin: 10px 0;
+}
+
+#notification {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+#notification.show {
+  top: 20px;
+}
+
+.message {
+  min-height: 20px;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #fff;
+}
+
+#result {
+  margin: 12px 0;
+}
+
+#myChart {
+  margin-top: 8px;
+}
+
+.logout-btn {
+  margin-top: 18px;
+  width: 38% !important;
+  background: linear-gradient(45deg, #34495e, #5d6d7e) !important;
+}
+
+.bottom-auth-actions {
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.dashboard-links {
+  margin-top: 6px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.dashboard-links a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.one { background: orange; color: #fff; }
+.o { background: red; color: #fff; }
+.two { background: brown; color: #fff; }
+.three { background: #f43f5e; color: #fff; }
+.four { background: #2563eb; color: #fff; }
+.five { background: #84cc16; color: #fff; }
+.six { background: #db2777; color: #fff; }
+.seven { background: #06b6d4; color: #fff; }
+.p { background: #16a34a; color: #fff; }
+.q { background: #65a30d; color: #fff; }
+.r { background: #eab308; color: #fff; }
+.s { background: #0891b2; color: #fff; }
+.t { background: #15803d; color: #fff; }
+.u { background: #4d7c0f; color: #fff; }
+.v { background: #ca8a04; color: #fff; }
+.w { background: #b91c1c; color: #fff; }

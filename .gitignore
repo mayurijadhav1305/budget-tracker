@@ -1,3 +1,14 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
 # Logs
 logs
 *.log
@@ -141,3 +152,23 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+database.db
+
+# Config files with secrets
+config/db.js.local
+config/secrets.js
+
+# Build/Dist
+/dist
+/build
+out/
+
+# Package manager lock files (optional - choose based on your team preference)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
